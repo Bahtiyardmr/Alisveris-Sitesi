@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+    
+    <main>
+        <!-- container1 -->
+        <div class="container  d-flex justify-content-center ">
+            <div class="row  w-100">
+                <div class="col">
+                    <div class="carousel slide  " id="mySlide">
+                       
+                        <div class="carousel-inner my-5">
+                            <div class="carousel-item active">
+                                <img src="{{ card.image.url }}" class="d-block w-100" alt="" style=" width: 611px  !important; height: 500px !important; ">
+                            </div>
+                            
+    
+                        </div>
+                        <button type="button" class="carousel-control-prev" data-bs-target="#mySlide" data-bs-slide="prev">
+                            <span class="carousel-control-prev" aria-hidden="true"></span>
+                            <span class="visually-hidden">Önceki</span>
+                        </button>
+                        <button type="button" class="carousel-control-next" data-bs-target="#mySlide" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Sonraki</span>
+                        </button>
+                    </div>
+                </div>
+               
+                <div class="col my-5 " style="background-color:rgb(206, 206, 206); margin-left: -50px;">
+                    <h5 class="ms-3">{{ card.title }}</h5>
+                   
+                    <div class="row">
+                        <div class="col-6 my-4 ">
+                            <del class="mx-3" style="color:grey;">{{ card.price }}</del> <span
+                                style="color: green; font-weight:700 ; font-size:20px ;">%1</span>
+                            <span class="material-symbols-outlined " style="color: green">
+                                arrow_drop_down
+                            </span>
+                            <h3 class="mx-3" style="color:green ;">{{ card.price }} </h3>
+                            <p>{{ card.text }}</p>
+                        </div>
+                        <div class="col-6 my-4 ">
+                            <a href="#">4,9</a>
+                            <a href="#">
+                                <svg style="width:20px;" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
+                                    viewBox="0 0 280.124 280.124" style="enable-background:new 0 0 280.124 280.124;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path style="fill:#F4B459;"
+                                            d="M280.124,106.914l-92.059-6.598L140.057,4.441l-48.55,95.874L0,106.914l61.282,74.015   l-17.519,94.754l96.294-43.614l96.294,43.606l-17.799-94.754C218.553,180.919,280.124,106.914,280.124,106.914z" />
+                                        <polygon style="fill:#E3A753;"
+                                            points="236.352,275.683 218.553,180.92 280.071,106.975 280.071,106.905 188.065,100.315    140.057,4.441 140.057,232.068  " />
+                                    </g>
+                                    <g>
+                                </svg>
+                                <svg style="width:20px;" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
+                                    viewBox="0 0 280.124 280.124" style="enable-background:new 0 0 280.124 280.124;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path style="fill:#F4B459;"
+                                            d="M280.124,106.914l-92.059-6.598L140.057,4.441l-48.55,95.874L0,106.914l61.282,74.015   l-17.519,94.754l96.294-43.614l96.294,43.606l-17.799-94.754C218.553,180.919,280.124,106.914,280.124,106.914z" />
+                                        <polygon style="fill:#E3A753;"
+                                            points="236.352,275.683 218.553,180.92 280.071,106.975 280.071,106.905 188.065,100.315    140.057,4.441 140.057,232.068  " />
+                                    </g>
+                                    <g>
+                                </svg>
+                                <svg style="width:20px;" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
+                                    viewBox="0 0 280.124 280.124" style="enable-background:new 0 0 280.124 280.124;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path style="fill:#F4B459;"
+                                            d="M280.124,106.914l-92.059-6.598L140.057,4.441l-48.55,95.874L0,106.914l61.282,74.015   l-17.519,94.754l96.294-43.614l96.294,43.606l-17.799-94.754C218.553,180.919,280.124,106.914,280.124,106.914z" />
+                                        <polygon style="fill:#E3A753;"
+                                            points="236.352,275.683 218.553,180.92 280.071,106.975 280.071,106.905 188.065,100.315    140.057,4.441 140.057,232.068  " />
+                                    </g>
+                                    <g>
+                                </svg>
+                                <svg style="width:20px;" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
+                                    viewBox="0 0 280.124 280.124" style="enable-background:new 0 0 280.124 280.124;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path style="fill:#F4B459;"
+                                            d="M280.124,106.914l-92.059-6.598L140.057,4.441l-48.55,95.874L0,106.914l61.282,74.015   l-17.519,94.754l96.294-43.614l96.294,43.606l-17.799-94.754C218.553,180.919,280.124,106.914,280.124,106.914z" />
+                                        <polygon style="fill:#E3A753;"
+                                            points="236.352,275.683 218.553,180.92 280.071,106.975 280.071,106.905 188.065,100.315    140.057,4.441 140.057,232.068  " />
+                                    </g>
+                                    <g>
+                                </svg>
+                            </a><br>
+                            <a href="#" style="font-size:11px ; margin-left:25px ;">43 değerlendirme</a>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="btn btn-white text-black ms-3" style="border: 1px gray solid;"> <span
+                                style="color:gray ;">Satici:</span>
+                            <span style="color:blue!important;">Bahtiyardmr</span>| Puan
+                            <span style="background-color:rgb(79, 218, 79) !important ;">9,5</span> <span
+                                class="rounded-circle" style="background-color:gray " ;>?</span> |
+                            <b><a href="#">Kampanyalari Gör <span class="rounded-circle text-white"
+                                        style="background-color: orangered;">1</span></a></b>
+                        </div>
+    
+                        <div class="btn btn-white rounded-4" style="border: 1px gray solid;">Sayiciya sor(8)</div>
+                        <br><br>
+                        <a class="ms-3" href="#" style="color: #090;">
+                            <span class="material-symbols-outlined">
+                                local_shipping
+                            </span> 75 TL üzeri kargo bedava</a><br><br>
+    
+                        <a class="ms-3" href="#btn0">
+                            <div class="btn" id="btn0">42"</div>
+                        </a>
+                        <a href="#btn1">
+                            <div class="btn" id="btn1">48"</div>
+                        </a>
+                        <a href="#btn2">
+                            <div class="btn" id="btn2">55"</div>
+                        </a>
+                        <a href="#btn3">
+                            <div class="btn" id="btn3">65"</div>
+                        </a>
+                        <a href="#btn4">
+                            <div class="btn" id="btn4">77"</div>
+                        </a>
+                        <a href="#btn5">
+                            <div class="btn" id="btn5">83"</div>
+                        </a><br>
+    
+                        
+                        <div class="ms-3 my-2">
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                <input style="width: 50px; height: 40px; border-radius: 10px; margin-top: 10px;"  name="adet" type="number" value="1"  min="1"> <br><br>
+        
+                                <a href="{% url 'Shoping' %}">
+                                    <button  type="submit" class="btn btn-danger  rounded-3" style="background-color:orangered ;">
+                                        <span class="material-symbols-outlined">
+                                            add_shopping_cart
+                                        </span>
+                                        Spete Ekle
+                                    </button>
+                                </a>
+                            </form>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+        <!-- container2 -->
+    
+        <div class="container">
+            <h2 style="background-color: orangered; color:white ; text-align:center; width: 100%;">Diğer  ürünler</h2>
+         <div class="row my-5 w-100">
+        
+            {% for card in cards %}
+            {% if card.category.name == 'Keşfet' or card.category.name == 'Bilgisayar' or card.category.name == 'Ev Teksitli' or card.category.name == 'Spor Fitness'%}
+            <div class="  col-sm-6 col-md-4 col-lg-3 mb-5">
+                <div class="card ">
+                    <a href="{% url 'Detail' card.id %}">
+                        <img src="{{ card.image.url }}" class="card-img-top" alt="..." style="width: 100%; height:300px;">
+                    </a>
+                    <a href="{% url 'Detail' card.id %}" class="card-body ">
+                        <p class="card-text">{{ card.title }}</p>
+                    </a>
+                    <div class="card-body" style=" width:100%; height: 300px;  min-height: 80px; max-height: 80px;">
+                        <p class="card-text">{{ card.text | truncatechars:30}}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="material-symbols-outlined"
+                                style="color:rgb(211, 181, 9) !important ; font-weight:900;">
+                                star
+                            </span>
+                            <span class="material-symbols-outlined"
+                                style="color:rgb(211, 181, 9) !important ; font-weight:900;">
+                                star
+                            </span>
+                            <span class="material-symbols-outlined"
+                                style="color:rgb(211, 181, 9) !important ; font-weight:900;">
+                                star
+                            </span>
+                            <span class="material-symbols-outlined"
+                                style="color:rgb(211, 181, 9) !important ; font-weight:900;">
+                                star
+                            </span>
+        
+                            <span class="material-symbols-outlined" style="color:rgb(211, 181, 9) !important ;">
+                                star_half
+                            </span>
+                        </li>
+                        <li class="list-group-item" style="color:gray ;"><del>{{ card.price }}</del> <span
+                                style="color:rgb(17, 207, 17) ;">%11 ▼</span> </li>
+                        <li class="list-group-item"><span style="color:rgb(17, 207, 17) ; font-weight: 600;">{{ card.price }}
+                                ₺</span></li>
+                    </ul>
+                    
+                 </div>
+        
+                </div>
+                    {% endif %}
+                {% endfor %}
+        
+        
+             </div>
+                  
+        </div>
+    
+    </main>
+  {% endblock body %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+    <div class="row my-5 mt-5 justify-content-center">
+        <div class="col-4">
+            
+            <div id="contact_wrap">
+                <h3>Şifre Değiştir</h3>
+                <form  method="POST">
+                    {% csrf_token %}
+                    
+                    <input id="ContactForm1_contact-form-email" name="password1" placeholder="Yeni Şifre" size="30" type="password"/>
+                    <input id="ContactForm1_contact-form-email" name="password2" placeholder="Yeniden Şifre" size="30" type="password"  />
+                    
+                    <button type="submit" class="btn btn-primary">Değiştir</button>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+    
+
+{% block body %}
+
+    <span name="tot" id="tot"> </span>
+
+    <div class="form">
+        
+        {% for shop in shops %}
+        
+        <hr class="hr">
+        <section class="content-shoping-cart">
+            <button style="height: 30px;" class="text-danger" data-bs-toggle="modal" data-bs-target="#exampleModal{{ shop.id }}">X</button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal{{ shop.id }}" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> {{ shop.card.title }}, Kaldır</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Kaldirmak istediğinize Emin misiniz ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vazgeç</button>
+                            <a href="{% url 'deleteShoping' shop.id %}" type="button" class="btn btn-primary">Kaldır</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <i class="fas fa-heart"></i>
+            <img style="height: 150px;" class="" src="{{ shop.card.image.url }}">
+           <br>
+                <p style="color:rgb(26, 26, 34)">{{ shop.card.title }}</p> 
+            
+           
+            <form action="" method="POST" class="d-flex">
+                {% csrf_token %}
+                <button class="basket-add" type="submit">Yenile</button>
+                <input name="adet" type="number" class="valeur mx-4" value="{{ shop.adet }}" style="width: 35px;">
+                <input name="card-id"  type="hidden" value="{{ shop.id }}" > 
+                
+                
+            </form>
+            <p>₺{{ shop.fiyat }}</p>
+        </section>
+                
+        {% endfor %}
+        <div class="onay-onay" >
+            <button class="onay">Toplam Fiyat= {{ toplam }} Onayliyorum</button>
+        </div>
+
+
+       <div class="toplam my-3">
+        
+       </div>
+    </div>
+   
+
+{% endblock body %}
+    

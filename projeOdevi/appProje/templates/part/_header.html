@@ -1,0 +1,181 @@
+{% load static %}
+<div id="up"></div>
+<header>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a href="{% url 'index' %}" class="navbar-brand text-white  mx-5" >
+                    <img  class="mx-5" src="{% static 'img/index/logo.jpg' %}" alt="" style="width:170px !important ;"></a>
+
+                </ul>
+
+<!----------------------------------------------------------------------------- ('_') SEARCH ('_')  ----------------------------------------------------------------------->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn " type="submit" style="background-color: orangered;">Search</button>
+                </form>
+
+<!----------------------------------------------------------------------------- ('_') LOGIN ('_')  ----------------------------------------------------------------------->
+
+                {% if request.user.is_authenticated %}
+
+                <a href="{% url 'myProducts' %}" class="btn mx-3" style="height: 40px; border-radius:10px !important; background-color:orangered; margin-right:6px;">
+                    Ürünlerim
+                </a>
+<!----------------------------------------------------------------------------- ('_') NOTIFICATION ('_')  ----------------------------------------------------------------------->
+                <a class="ms-3" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="38px" height="38px" viewBox="-2 0 34 34" version="1.1">
+                    <title>notification</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs>
+                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+                            <stop stop-color="orangered" offset="0%">
+                
+                            </stop>
+                            <stop stop-color="orangered" offset="100%">
+                
+                            </stop>
+                        </linearGradient>
+                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+                            <stop stop-color="orangered" offset="0%">
+                
+                            </stop>
+                            <stop stop-color="orangered" offset="100%">
+                
+                            </stop>
+                        </linearGradient>
+                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+                            <stop stop-color="orangered" offset="0%">
+                
+                            </stop>
+                            <stop stop-color="orangered" offset="100%">
+                
+                            </stop>
+                        </linearGradient>
+                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+                            <stop stop-color="orangered" offset="0%">
+                
+                            </stop>
+                            <stop stop-color="orangered" offset="100%">
+                
+                            </stop>
+                        </linearGradient>
+                        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+                            <stop stop-color="yellow" offset="0%">
+                
+                            </stop>
+                            <stop stop-color="yellow" offset="100%">
+                
+                            </stop>
+                        </linearGradient>
+                    </defs>
+                    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="ui-gambling-website-lined-icnos-casinoshunter" transform="translate(-1385.000000, -1904.000000)"
+                            fill-rule="nonzero">
+                            <g id="4" transform="translate(50.000000, 1871.000000)">
+                                <g id="notification" transform="translate(1335.000000, 33.000000)">
+                                    <path
+                                        d="M26,24.6895899 L26,14 C26,7.92486775 21.0751322,3 15,3 C8.92486775,3 4,7.92486775 4,14 L4,24.6895899 L6,24.6895899 C8.6862915,24.6895899 11.6862915,24.6895899 15,24.6895899 C18.3137085,24.6895899 21.3137085,24.6895899 24,24.6895899 L26,24.6895899 Z"
+                                        id="Path" fill="url(#linearGradient-1)">
+                
+                                    </path>
+                                    <path
+                                        d="M26.5,23 C28.4329966,23 30,24.5670034 30,26.5 C30,28.4329966 28.4329966,30 26.5,30 L3.5,30 C1.56700338,30 0,28.4329966 0,26.5 C0,24.5670034 1.56700338,23 3.5,23 L26.5,23 Z"
+                                        id="Path" fill="url(#linearGradient-2)">
+                
+                                    </path>
+                                    <path d="M21,34 C21,30.6862915 18.3137085,28 15,28 C11.6862915,28 9,30.6862915 9,34 L21,34 Z"
+                                        id="Oval" fill="url(#linearGradient-3)"
+                                        transform="translate(15.000000, 31.000000) rotate(-180.000000) translate(-15.000000, -31.000000) ">
+                
+                                    </path>
+                                    <path
+                                        d="M17,2.13162821e-14 L13,2.13162821e-14 L11,2.13162821e-14 L11,1.56280256 C11,3.49579918 12.5670034,5.06280256 14.5,5.06280256 L15.5,5.06280256 C17.4329966,5.06280256 19,3.49579918 19,1.56280256 L19,2.13162821e-14 L17,2.13162821e-14 Z"
+                                        id="Rectangle-Copy-11" fill="url(#linearGradient-4)"
+                                        transform="translate(15.000000, 2.531401) rotate(-180.000000) translate(-15.000000, -2.531401) ">
+                
+                                    </path>
+                                    <path
+                                        d="M24,3 C21.2385763,3 19,5.23857625 19,8 C19,10.7614237 21.2385763,13 24,13 C26.7614237,13 29,10.7614237 29,8 C29,5.23857625 26.7614237,3 24,3 Z"
+                                        id="Path" fill="url(#linearGradient-5)">
+                
+                                    </path>
+                                </g>
+                </svg>
+                </a>
+                <!-- svg -->
+<!----------------------------------------------------------------------------- ('_') USERS ('_')  ----------------------------------------------------------------------->
+                <div class="btn-group me-5 ms-2 disabled ms-0 me-0" >
+                    <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                        data-bs-display="static" aria-expanded="false" style="background-color: orangered;">
+                        
+                        <img class="userimg" src="{{ userinfo.image.url }}" alt="">
+                        {{ request.user }}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start" style="border: 2px orangered dotted;">
+                        <li><a class="dropdown-item" href="#">{{ request.user }}</a></li>
+                        <li><a class="dropdown-item" href="#">Profil</a></li>
+                        <li><a class="dropdown-item" href="{% url 'changePassword' %}">Sifre Degistir</a></li>
+                        <li><a class="dropdown-item" href="{% url 'logoutUser' %}">Sign out</a></li>
+                    </ul>
+                </div>
+<!----------------------------------------------------------------------------- ('_') SEPET ('_')  ----------------------------------------------------------------------->
+                <div class="btn " style="height: 45px; border-radius:10px !important; background-color:orangered; margin-right:30px;">
+
+                    <a class="a-spet" href="{% url 'Shoping' %}"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
+                            viewBox="0 0 455.297 455.297" style="enable-background:new 0 0 455.297 455.297; width: 20px ;"
+                            xml:space="preserve">
+                            <g>
+                                <circle cx="65.993" cy="417.586" r="35" />
+                                <path d="M30.993,322.586v30h182.879c-5.914-9.267-10.676-19.335-14.094-30H30.993z" />
+                                <path
+                                    d="M323.059,183.727c-54.826,0-99.431,44.604-99.431,99.429s44.604,99.429,99.431,99.429   c54.825,0,99.429-44.604,99.429-99.429S377.884,183.727,323.059,183.727z M384.559,298.157h-46.5v46.5h-30v-46.5h-46.5v-30h46.5   v-46.5h30v46.5h46.5V298.157z" />
+                                <path
+                                    d="M393.673,2.711l-12.294,75H0l25.888,158.454c2.833,17.282,19.479,31.422,36.992,31.422h131.688   c7.715-64.052,62.392-113.859,128.49-113.859c26.887,0,51.884,8.244,72.6,22.333l23.496-143.349h36.142v-30H393.673z" />
+                                <path
+                                    d="M323.059,412.586c-12.147,0-23.907-1.686-35.062-4.829c-0.912,3.118-1.404,6.416-1.404,9.829c0,19.33,15.67,35,35,35   c19.33,0,35-15.67,35-35c0-3.145-0.421-6.19-1.2-9.089C345.054,411.166,334.219,412.586,323.059,412.586z" />
+                            </g>
+                            <g>
+                        </svg>
+                        Sepetim</a>
+                </div>
+                {% else %}
+<!----------------------------------------------------------------------------- ('_') LOGOUT ('_')  ----------------------------------------------------------------------->
+                <ul class="navbar-nav  mb-2 mb-lg-0 ms-5">
+                    <li class="nav-item">
+                        <a href="{% url 'loginUser' %}">
+                            <div class="btn btn-primary mx-3">Giriş Yap</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'registerUser' %}" class="btn btn-success me-5">Kayidol</a>
+                    </li>
+                    {% endif %}
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <nav class="navbar navbar-expand-lg bg-light"style="background-color:orangered !important ;">
+            <div class="container">
+                <div class="row  w-100">
+                    <div class="col"><a href="{% url 'Elektronik' %}">Elektronik</a></div>
+                    <div class="col"><a href="{% url 'Ev' %}">Ev</a></div>
+                    <div class="col"><a href="{% url 'Anne' %}">Anne,Bebek,Oyuncak</a></div>
+                    <div class="col mx-5"><a class="mx-5" href="{% url 'Spor' %}">Spor</a></div>
+                    <div class="col"><a href="{% url 'Kozmetik' %}">Kozmetik</a></div>
+                    <div class="col"><a href="{% url 'Super' %}">Super Market</a></div>
+                    <div class="col"><a href="{% url 'Kitap' %}">Kitap</a></div>
+                </div>
+        </nav>
+</header>

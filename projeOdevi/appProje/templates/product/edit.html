@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+    
+
+    
+<div class="row justify-content-center  my-5">
+    <div class="col-8 mt-4 p-5" style="background-color: rgb(204, 110, 56);">
+        <h2>Ürün Düzenle</h2>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+ <!-- ---------------------------------------------------------------------------------(-_-) KATEGORI (-_-)----------------------------------------------------------------------- -->
+            <label for="exampleFormControlInput1" class="form-label">Ürün Kategorisi</label>
+            <select class="form-select mb-3" name="category" aria-label="Default select example">
+                <option >Kategori sec</option>
+
+                {% for cat in categorylist %}
+                <option value="{{ cat.id }}"  {% if product.category == cat %} selected {% endif %}>{{ cat }}</option>
+
+                {% endfor %}
+
+            </select><br>
+ <!-- ---------------------------------------------------------------------------------(-_-) NAME (-_-)-------------------------------------------------------------------------- -->
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Ürün Adı</label>
+                <input type="text" name="title" value="{{ product.title }}" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Ürün adı giriniz">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Ürüb Açıklaması</label>
+                <textarea class="form-control"  name="text" id="exampleFormControlTextarea1" rows="3">{{ product.text }}</textarea>
+            </div>
+
+ <!-- ---------------------------------------------------------------------------------(-_-) PRICE (-_-)--------------------------------------------------------------------------- -->
+            <div class="mb-3">
+                <label for="validationCustom05" class="form-label">Fiyat</label>
+                <input type="number" value="{{ product.price }}" name="price" class="form-control" id="validationCustom05" required>
+
+            </div>
+ <!-- ---------------------------------------------------------------------------------(-_-) IMAGE (-_-)-------------------------------------------------------------------------------- -->
+            <div class="d-flex">
+                <img class="w-50 h-50" src="{{ product.image.url }}" alt="" style="width: 100%; max-height: 350px; object-fit: contain;">
+                <div class="mb-3 mx-5">
+                    <label for="formFile" class="form-label">Ürün Fotorafı</label>
+                    <input class="form-control" value="{{ product.image }}" name="image" type="file" id="formFile">
+                </div>
+            </div>
+            <br>
+
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </form>
+    </div>
+</div>
+{% endblock body %}
+    

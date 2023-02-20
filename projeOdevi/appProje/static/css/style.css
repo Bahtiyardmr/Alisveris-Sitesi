@@ -1,0 +1,476 @@
+/* <-----------------------------------------------------------------------------------('_') INDEX ('_')----------------------------------------------------------> */
+a{
+    text-decoration: none !important; 
+    color: black !important;
+}
+ a:hover {
+      text-decoration: none !important;
+     color: rgb(24, 97, 206) !important;
+ }
+
+  .spet{
+            border-radius:10px ;
+            background-color: orangered;
+            display: block !important;
+            justify-content: center !important;
+            text-align: center;
+}
+.card:hover{
+    box-shadow: -5px -6px 10px orangered;
+    transform: scale(1.03);
+} 
+.card-img-top:hover{
+    box-shadow: none;
+    transform: scale(1.1);
+}
+.my-c:hover{
+    box-shadow:0px 0px 0px 0px white !important;
+    transform: scale(1);
+    color: black !important;
+}
+.container.f-row.card:hover{
+    box-shadow: none !important;
+}
+ .a-spet:hover{
+    color: black !important;
+}
+.box{
+    width: 120px;
+    height: 50px;
+    border: 1px white solid;
+    background-color: rgb(212, 229, 243);
+    background-color: aliceblue;
+   
+}
+.box2{
+    display: none;
+}
+
+/* <-----------------------------------------------------------------------------------('_') LOGIN ('_')----------------------------------------------------------> */
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+.login{
+    position: absolute;
+    z-index: 1021;
+}
+
+/* <-----------------------------------------------------------------------------------('_') DETAIL ('_')----------------------------------------------------------> */
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: rgb(30, 92, 184);
+        }
+
+        .taxit:hover {
+            color: grey;
+        }
+
+        a>.taksit:hover {
+            color: orangered;
+        }
+
+        .btn {
+            border: 1px solid rgb(192, 190, 190);
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            border: 2px solid grey;
+        }
+
+        :target {
+            border: 2px solid red;
+
+        }
+
+        .box1 {
+            width: 256px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        .box2 {
+            width: 256px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        .box1:target {
+            border: 2px solid red;
+        }
+
+        .box2:target {
+            border: 2px solid red;
+        }
+
+        .box3 {
+            height: 50px;
+            width: auto;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .box4 {
+            width: 30px;
+            margin-left: -2px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box4:hover {
+            background-color: rgb(187, 184, 184);
+        }
+
+        .box5 {
+            width: 50px;
+            height: 90%;
+            margin-top: 2px;
+            background-color: rgb(238, 226, 226);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box6 {
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box6:hover {
+            background-color: rgb(187, 184, 184);
+        }
+
+        /* container 2 */
+        .a-inceleme:hover {
+            color: black;
+        }
+
+        .spet {
+            border-radius: 10px;
+            background-color: orangered;
+            display: block !important;
+            justify-content: center !important;
+            text-align: center;
+        }
+
+        .card:hover {
+            box-shadow: -5px -6px 10px orangered;
+            transform: scale(1.03);
+        }
+
+        .card-img-top:hover {
+            box-shadow: none;
+            transform: scale(1.1);
+        }
+
+        .f-row.card-img-top:hover {
+            box-shadow: none;
+            transform: scale(1);
+        }
+
+        .a-spet:hover {
+            color: black !important;
+        }
+
+        .my-c:hover {
+            box-shadow: 0px 0px 0px 0px white !important;
+            transform: scale(1);
+            color: black !important;
+        }
+
+        /* jquery */
+        .box7 {
+            width: 120px;
+            height: 50px;
+            border: 1px white solid;
+            background-color: rgb(212, 229, 243);
+            background-color: aliceblue;
+
+        }
+
+        .box8 {
+            display: none;
+        }
+   
+/* <-----------------------------------------------------------------------------------('_') SPOR ('_')----------------------------------------------------------> */
+         a:hover {
+            text-decoration: none !important;
+            color: rgb(12, 111, 204) !important;
+        }
+
+        .spet {
+            border-radius: 10px;
+            background-color: orangered;
+            display: block !important;
+            justify-content: center !important;
+            text-align: center;
+        }
+
+        .card:hover {
+            box-shadow: -5px -6px 10px orangered;
+            transform: scale(1.03);
+        }
+
+        .card-img-top:hover {
+            box-shadow: none;
+            transform: scale(1.1);
+        }
+
+        .f-row.card-img-top:hover {
+            box-shadow: none;
+            transform: scale(1);
+        }
+
+/* <-----------------------------------------------------------------------------------('_') PRODELETE ('_')----------------------------------------------------------> */ 
+
+.prodelete:hover{
+    color: red !important;
+    
+    
+}
+
+/* <-----------------------------------------------------------------------------------('_') SHOPING ('_')----------------------------------------------------------> */ 
+    .content-shoping-cart{
+        display: flex;
+        justify-content: space-around;
+        margin: 60px;
+        padding: 31px;
+        
+    }    
+    .SOMME{
+    height: 20px;
+        width: 80px;}
+        #button-minus{
+        height: 33px;
+        }
+    .valeur{
+        height: 20px;
+        width: 80px;
+    }
+    .button-PLUS{
+        height: 33px;}
+    .img-2{
+    height: 75px;}
+    .img-1{
+        height:70px;
+    }
+    .button-exit{
+        height: 30px;
+    }
+    .button-minus{
+        height: 33px;}
+    .fa-heart{
+            color: blue;
+        }
+        .form{
+            background-color: white;
+            margin-left: 200px;
+            margin-right: 200px;
+            
+        }
+        .shoop{
+    background-color: green;
+        }
+        .shoop p {
+            color: black;
+        }
+            #shopping-bag-total{
+                color: brown;
+            }
+
+/* <-----------------------------------------------------------------------------------('_') USERINFO ('_')----------------------------------------------------------> */ 
+.userimg{
+    width: 35%;
+    border-radius: 50%;
+    height: 40px;
+}
+
+/* <-----------------------------------------------------------------------------------('_') CHAGEPS ('_')----------------------------------------------------------> */ 
+
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&subset=arabic');
+#contact_wrap {
+margin: auto;
+width:321px;
+max-width: 100%;  
+height: 380px;
+padding: 25px;
+border-radius: 1em;
+border-top:1px solid #dbdbdb;
+border-right:1px solid #b2b2b2;
+border-left:1px solid #dbdbdb;
+border-bottom:1px solid #9d9d9d;
+background-color:#cccccc;
+filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#f2f2f2', endColorstr='#cccccc');
+background-image:-webkit-linear-gradient(top, #f2f2f2 0%, #e6e6e6 50%, #cccccc 100%);
+background-image:-moz-linear-gradient(top, #f2f2f2 0%, #e6e6e6 50%, #cccccc 100%);
+background-image:-ms-linear-gradient(top, #f2f2f2 0%, #e6e6e6 50%, #cccccc 100%);
+background-image:-o-linear-gradient(top, #f2f2f2 0%, #e6e6e6 50%, #cccccc 100%);
+background-image:linear-gradient(top, #f2f2f2 0%, #e6e6e6 50%, #cccccc 100%);
+box-shadow: 1px 1px 5px #ccc;
+}
+#contact_wrap h3{
+color: white;
+font-family:'cairo',serif;
+font-size: 20px;
+font-style:normal;
+font-weight:normal;
+margin: 0 -36px 20px -36px;
+padding: 12px;
+text-align: center;
+text-shadow: 2px 0 0 #1f4962;
+-webkit-box-shadow: inset 0 0 25px rgba(0,0,0,0.3),0px 1px 5px #666;
+-moz-box-shadow: inset 0 0 25px rgba(0,0,0,0.3),0px 1px 5px #666;
+box-shadow: inset 0 0 25px rgba(0,0,0,0.3),0px 1px 5px #666;
+background-color: #3b5998 ;
+position: relative;
+}
+#contact_wrap h3:before {
+content: ' ';
+position: absolute;
+bottom: -10px;
+left: 0;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 0 0 10px;
+border-color: #333 transparent transparent transparent;
+}
+#contact_wrap h3:after {
+content: ' ';
+position: absolute;
+bottom: -10px;
+right: 0;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 10px 10px;
+border-color: transparent transparent transparent #333;
+}
+#ContactForm1_contact-form-name{
+width: 270px;
+max-width: 100%;  
+height:auto;
+margin: 5px auto;
+padding: 10px 10px 10px 40px;
+background:#f6f6f6 url(https://2.bp.blogspot.com/-GoNmkIDybR0/UZuZDpVOXaI/AAAAAAAAEO8/pNPaQU1aiwQ/s1600/user.png)no-repeat 10px center;
+color:#777;
+border:1px solid #ccc;
+text-align: right;
+font-family:'cairo',serif;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px inset, #f5f5f5 0px 1px 0px;
+box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px inset, #f5f5f5 0px 1px 0px;
+}
+#ContactForm1_contact-form-email{
+width: 270px;
+max-width: 100%;    
+height:auto;
+margin: 5px auto;
+padding: 10px 10px 10px 40px;
+background: #f6f6f6 url(https://3.bp.blogspot.com/-zGxMJ_C5R60/UZuZGnKgcuI/AAAAAAAAEPE/KwPOHFuBffc/s1600/pen.png)no-repeat 10px center;
+color:#777;
+border:1px solid #ccc;
+text-align: right;
+font-family:'cairo',serif;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px inset, #f5f5f5 0px 1px 0px;
+box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px inset, #f5f5f5 0px 1px 0px;
+}
+#ContactForm1_contact-form-email-message{
+width: 270px;
+max-width: 100%;  
+height: 150px;
+margin: 5px auto;
+padding: 10px 10px 10px 40px;
+font-family:Arial, sans-serif;
+background: #f6f6f6 url(https://1.bp.blogspot.com/-QduNKpNbFyQ/UZuZPuE_OfI/AAAAAAAAEPU/Rv4C4Kic2I0/s1600/msg2.png)no-repeat 10px 10px;
+color:#777;
+border:1px solid #ccc;
+text-align: right;
+font-family:'cairo',serif;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px inset, #f5f5f5 0px 1px 0px;
+box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px inset, #f5f5f5 0px 1px 0px;
+}
+#ContactForm1_contact-form-submit {
+width: 20%;
+float: right;
+font-size:12px;
+color: #FFF;
+font-family:'cairo',serif;
+padding:0;
+cursor:pointer;
+margin: 25px 0 3px 0 0;
+background-color:#005a8a;
+border-radius:4px;
+text-shadow: 1px 0 0 #1f4962;
+-webkit-box-shadow: inset 0 0 35px rgba(0,0,0,0.3),0px 1px 5px #666;
+-moz-box-shadow: inset 0 0 35px rgba(0,0,0,0.3),0px 1px 5px #666;
+box-shadow: inset 0 0 35px rgba(0,0,0,0.3),0px 1px 5px #666;
+background-color: #3b5998;
+border:1px solid #194f6d;
+}
+#ContactForm1_contact-form-submit:hover {
+background:#4c9bc9;
+}
+#ContactForm1_contact-form-error-message, #ContactForm1_contact-form-success-message{
+width: 320px;
+max-width: 100%;    
+margin-top:35px;
+} 
+
+
+/* <-----------------------------------------------------------------------------------('_') BASKET ('_')----------------------------------------------------------> */ 
+
+.basket-add{
+    height: 30px;
+}
+
+.toplam{
+    width: 100%;
+    height: 45px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+.onay-onay{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+.onay{
+    box-shadow: 10px 10px 10px black;
+    background-color: orangered;
+    color: white;
+}
+.hr{
+    color: orangered;
+    height: 5px !important;
+    font-weight: 900;
+}

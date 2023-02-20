@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+     <main>
+        <!-- container1 -->
+        <div class="container  ps-5 pe-5">
+            <div class="row">
+                <div class="col">
+                    <div class="carousel slide  " id="mySlide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button class="active" type="button" data-bs-target="#mySlide" data-bs-slide-to="0"
+                                aria-current="true" aria-label="ilk sylayt"></button>
+                            <button type="button" data-bs-target="#mySlide" data-bs-slide-to="1" aria-current="true"
+                                aria-label="ilk sylayt"></button>
+                            <button type="button" data-bs-target="#mySlide" data-bs-slide-to="2" aria-current="true"
+                                aria-label="ikinci sylayt"></button>
+                            <button type="button" data-bs-target="#mySlide" data-bs-slide-to="3" aria-current="true"
+                                aria-label="ucuncu sylayt"></button>
+                        </div>
+                        <div class="carousel-inner my-5">
+                            <a href="inceleme.html">
+                                <div class="carousel-item active"><img src="{% static 'img/anne/1.jpg' %}" class="d-block w-100" alt=""
+                                        style=" height: 650px !important;"> </div>
+                            </a>
+                            <a href="inceleme.html">
+                                <div class="carousel-item active"><img src="{% static 'img/anne/2.jpg' %}" class="d-block w-100" alt=""
+                                        style=" height: 650px !important;"> </div>
+                            </a>
+                            <a href="inceleme.html">
+                                <div class="carousel-item active"><img src="{% static 'img/anne/3.jpg' %}" class="d-block w-100" alt=""
+                                        style=" height: 650px !important;"> </div>
+                            </a>
+                            <a href="inceleme.html">
+                                <div class="carousel-item active"><img src="{% static 'img/anne/4.jpg' %}" class="d-block w-100" alt=""
+                                        style=" height: 650px !important;"> </div>
+                            </a>
+        
+                        </div>
+                        <button type="button" class="carousel-control-prev" data-bs-target="#mySlide" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Önceki</span>
+                        </button>
+                        <button type="button" class="carousel-control-next" data-bs-target="#mySlide" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Sonraki</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container2 -->
+        <div class="container">
+                <h2 style="background-color: orangered; color:white ; text-align:center; width: 98%;">Anne Bebek Ürünleri ve Fiyatları</h2>
+            <!-- row1 -->
+                <div class="row my-5 w-100">
+                     {% for card in cards %}
+                {% if card.category.name == 'Anne Bebek' %}
+                        <div class="  col-sm-6 col-md-4 col-lg-3 mb-5">
+                              <div class="card ">
+                                <a href="{% url 'Detail' card.id %}">
+                                    <img src="{{ card.image.url }}" class="card-img-top" alt="..." style="width: 100%; height:300px;">
+                                </a>  
+                                  <a href="{% url 'Detail' card.id %}" class="card-body ">
+                                      <p class="card-text">{{ card.title }}</p>
+                                  </a>
+                                  <div class="card-body" style=" width:100%; height: 300px;  min-height: 80px; max-height: 80px;">
+                                      <p class="card-text">{{ card.text | truncatechars:30}}</p>
+                                  </div>
+                                  <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">
+                                          <span class="material-symbols-outlined"
+                                              style="color:rgb(211, 181, 9) !important ; font-weight:900;">
+                                              star
+                                          </span>
+                                          <span class="material-symbols-outlined"
+                                              style="color:rgb(211, 181, 9) !important ; font-weight:900;">
+                                              star
+                                          </span>
+                                          <span class="material-symbols-outlined"
+                                              style="color:rgb(211, 181, 9) !important ; font-weight:900;">
+                                              star
+                                          </span>
+                                          <span class="material-symbols-outlined"
+                                              style="color:rgb(211, 181, 9) !important ; font-weight:900;">
+                                              star
+                                          </span>
+                      
+                                          <span class="material-symbols-outlined" style="color:rgb(211, 181, 9) !important ;">
+                                              star_half
+                                          </span>
+                                      </li>
+                                     
+                                      <li class="list-group-item"><span style="color:rgb(17, 207, 17) ; font-weight: 600;">{{ card.price }} ₺</span></li>
+                                  </ul>
+                               
+                              </div>
+                      
+                        </div> 
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+
+                  <a href="{% url 'index' %}">
+                    <img src="{% static 'img/logo.jpg' %}" alt="" style="width:200px ;">
+                </a>
+                <div class=" f-row row my-5 w-100 bg-white">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="my-c card">
+                            <p style="text-align:center;"> Yarin Kapinda</p>
+                            <img src="{% static '1.svg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text my-1">Yarın Kapında ile ihtiyaçlarına ertesi gün sahip ol</p>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class=" my-c card">
+                            <p style="text-align:center;">Tek Tıkla Güvenli Alısveriş</p>
+                            <img src="{% static '2.svg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text my-1">Ödeme ve adres bilgilerinizi kaydedin, güvenli alışveriş yapın.
+                                </p>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="my-c card">
+                            <p style="text-align:center;"> Mobil Cebinizde</p>
+                            <img src="{% static '3.svg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text my-1">Dilediğiniz her yerden güvenli alışveriş keyfini çıkarın</p>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class=" my-c card">
+                            <p style="text-align:center;"> Kapında iade</p>
+                            <img src="{% static '4.svg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text my-1">Aldığınız ürünü iade etmek hiç bu kadar kolay olmamıştı</p>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <a class=" a-spet d-flex justify-content-end" href="#up">
+                    <div class="btn" style="background-color: orangered;"><span class="material-symbols-outlined">
+                            arrow_upward
+                        </span></div>
+                </a>
+            
+        </div>
+    </main>
+{% endblock body %}
+    
